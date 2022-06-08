@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY GALLERY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=script">
+<style>
+body, html {
+  height: 100%;
+  font-family: "script", italic;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url(image/Background.jpg);
+  min-height: 100%;
+
+}
+
+
+
+.menu {
+  display: none;
+}
+
+</style>
+</head>
+<body> 
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+    </div>
+    <div class="w3-col s3">
+      <a href="biodata.html" class="w3-button w3-block w3-black">BIODATA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="gallery.html" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="family.html" class="w3-button w3-block w3-black">FAMILY</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag">Intnhnis</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px">MY<br>GALLERY</span>
+    </div>
+  </header>
+  
+  
+  
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-large">
+
+    <!-- gallery Container -->
+<div class="w3-container" id="gallery" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">GALLERY</span></h5>
+  
+    
+    <h2><strong></strong></h2>
+
+    <img src="image/Baby.jpeg" alt="Me with baby" img allign="center" style="width:50%">
+    <h3>Me with baby</h3>
+    <img src="image/Zumba.jpeg" <img src="image/Zumba_a.jpeg" alt="zumba" img allign="center" style="width:50%">
+    
+
+ <p><i>Video when I was training Squash</i></p>
+ <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="700" height="300">
+    <source src="squash.mp4" type="video/mp4">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+
+</script> 
+
+</div>
+</div>
+
